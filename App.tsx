@@ -1,6 +1,6 @@
 import useApplication from '@steroidsjs/core/hooks/useApplication';
-import useNativeRouter from './src/hooks/useNativeRouter';
-import HtmlComponent from './src/components/HtmlComponent';
+import useNativeRouter from '@steroidsjs/native/hooks/useNativeRouter';
+import HtmlComponent from '@steroidsjs/native/components/HtmlComponent';
 
 import styles from './src/styles';
 

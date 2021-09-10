@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View, ScrollView, Text } from 'react-native';
 
-import useBemNative from '../../hooks/useBem';
+import useBemNative from '@steroidsjs/native/hooks/useBemNative';
 
 import Button from '../../ui/form/Button';
 

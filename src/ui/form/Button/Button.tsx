@@ -6,7 +6,7 @@ import {
     Platform,
     ActivityIndicator,
 } from 'react-native';
-import useBemNative from '../../../hooks/useBem';
+import useBemNative from '@steroidsjs/native/hooks/useBemNative';
 
 import { IButtonViewProps } from '@steroidsjs/core/ui/form/Button/Button';
 import Icon from '@steroidsjs/core/ui/icon/Icon';
