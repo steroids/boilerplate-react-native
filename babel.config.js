@@ -8,18 +8,17 @@ module.exports = function (api) {
     const envConfigPath = path.resolve(__dirname, 'env');
 
     if (
-        typeof process.env.ENV === 'undefined' &&
-        !fs.existsSync(defaultConfigPath)
+        typeof process.env.ENV === 'undefined'
+        && !fs.existsSync(defaultConfigPath)
     ) {
         throw new Error(
             `Babel config couldn't find dot env file path: ${defaultConfigPath}`,
         );
     }
 
-    const finalConfigPath =
-        typeof process.env.ENV === 'undefined'
-            ? defaultConfigPath
-            : path.resolve(envConfigPath, process.env.ENV.trim() + '.env');
+    const finalConfigPath = typeof process.env.ENV === 'undefined'
+        ? defaultConfigPath
+        : path.resolve(envConfigPath, process.env.ENV.trim() + '.env');
 
     if (!fs.existsSync(finalConfigPath)) {
         throw new Error(
