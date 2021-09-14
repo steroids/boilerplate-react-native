@@ -1355,10 +1355,10 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^1.7.0"
 
-"@steroidsjs/native@^2.1.0-beta.2":
-  version "2.1.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@steroidsjs/native/-/native-2.1.0-beta.2.tgz#02d17af499ce77c7cda58a202ac09f8db2750bc4"
-  integrity sha512-a+eG+M4x+jht6LeEdXjJ0nvfQsV9uQZQ1nYuWXkwyjtuZhKeIzbmhixIEdIKBMH+xPa+HbfvgKxZmrJ7DqMHMw==
+"@steroidsjs/native@^2.1.0-beta.3":
+  version "2.1.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@steroidsjs/native/-/native-2.1.0-beta.3.tgz#c6e856245b6df3695a66478724b34447f7744568"
+  integrity sha512-L5aKjOKXulMEUr6TAuRNwytLI9Inx98ojMlOBLvfsE2c/fE2mLy9iC2maRWqbOUU4/JTfORE5xew+nMQNr8Aog==
   dependencies:
     "@react-native-async-storage/async-storage" "^1.15.7"
     "@react-native-community/datetimepicker" "^3.5.2"
@@ -6403,6 +6403,11 @@ react-native-codegen@^0.0.7:
     flow-parser "^0.121.0"
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
+
+react-native-fast-image@^8.3.7:
+  version "8.3.7"
+  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-8.3.7.tgz#c4877de17903101f6d94b6736a4f7e5d7b019224"
+  integrity sha512-J++Ad04PTUe4YgjyGv63gfgV8Fz1gZKAgQHpblf8Z87D9dxfc8UfXHTPv9VLGdTJU4IzdTnQqzoFgDtWdsvBsQ==
 
 react-native-gesture-handler@^1.10.3:
   version "1.10.3"

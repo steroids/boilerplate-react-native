@@ -18,10 +18,11 @@
     "@react-navigation/drawer": "^6.1.4",
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/stack": "^6.0.7",
-    "@steroidsjs/native": "^2.1.0-beta.2",
+    "@steroidsjs/native": "^2.1.0-beta.3",
     "babel-plugin-inline-dotenv": "^1.6.0",
     "react": "17.0.2",
     "react-native": "0.65.1",
+    "react-native-fast-image": "^8.3.7",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-reanimated": "2.3.0-alpha.2",
     "react-native-screens": "^3.6.0"
