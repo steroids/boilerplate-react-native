@@ -28,3 +28,19 @@
 5. adb devices
 6. adb -s <device name> reverse tcp:8081 tcp:8081
 7. yarn android
+
+## Splash screen
+
+### Android 
+
+1. Open Android Studio
+2. Open folder android in project
+3. Right-click on the folder res
+4. New Assets
+5. Name 'ic_launcher'
+
+### iOS
+
+1. Open XCode
+2. Open folder ios in project
+3. Images > AppIcon change
