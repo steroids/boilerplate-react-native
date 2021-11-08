@@ -1342,6 +1342,42 @@
     redux "^4.0.4"
     redux-mock-store "^1.5.4"
 
+"@steroidsjs/core@^2.1.0-beta.26":
+  version "2.1.0-beta.26"
+  resolved "https://registry.yarnpkg.com/@steroidsjs/core/-/core-2.1.0-beta.26.tgz#083f1e7dbeb6714b08c20e2273a01343a02d177b"
+  integrity sha512-9ZC25K46cwiCuzSnZJfgSNw766LnjahdItHhnDJrc4a83NrBO4jQEbcLAoNZ1MuOP7hzIGD+BZ5PQYByM5dZdw==
+  dependencies:
+    axios "^0.21.1"
+    connected-react-router "^6.9.1"
+    domready "^1.0.8"
+    dot-prop-immutable "^2.1.0"
+    fileup-core "^1.2.0"
+    history "^4.10.1"
+    intl-messageformat "^2.2.0"
+    js-cookie "^2.2.1"
+    load-js "^3.0.3"
+    lodash "^4.17.21"
+    lodash-es "^4.17.21"
+    moment "^2.29.1"
+    path-to-regexp "^1.7.0"
+    qs "^6.9.4"
+    query-string "^6.14.0"
+    react "^17.0.2"
+    react-click-outside "^3.0.1"
+    react-day-picker "^7.4.8"
+    react-dom "^17.0.2"
+    react-grid-gallery "^0.4.8"
+    react-helmet "^6.1.0"
+    react-image-crop "^9.0.2"
+    react-input-mask "^3.0.0-alpha.2"
+    react-redux "^7.1.1"
+    react-router "^5.2.0"
+    react-router-dom "^5.2.0"
+    react-use "^17.1.0"
+    redux "^4.0.4"
+    redux-mock-store "^1.5.4"
+    set-cookie-parser "^2.4.8"
+
 "@steroidsjs/eslint-config@^2.0.0-beta.3":
   version "2.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/@steroidsjs/eslint-config/-/eslint-config-2.0.0-beta.3.tgz#29eac1104770d0a90290221373d4c5a5b6300430"
@@ -1355,10 +1391,10 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^1.7.0"
 
-"@steroidsjs/native@^2.1.0-beta.3":
-  version "2.1.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@steroidsjs/native/-/native-2.1.0-beta.3.tgz#c6e856245b6df3695a66478724b34447f7744568"
-  integrity sha512-L5aKjOKXulMEUr6TAuRNwytLI9Inx98ojMlOBLvfsE2c/fE2mLy9iC2maRWqbOUU4/JTfORE5xew+nMQNr8Aog==
+"@steroidsjs/native@^2.1.0-beta.10":
+  version "2.1.0-beta.10"
+  resolved "https://registry.yarnpkg.com/@steroidsjs/native/-/native-2.1.0-beta.10.tgz#23dfc1c18f7d605ea28b06e6e888a854e3ab8295"
+  integrity sha512-z/a+24Lh7F3jSyhCMS6xnwYMy1MlMv0heSSwgw35ldOLuW9/gndY/27Es3ZtyRIku2CfRUfumYXjOGLE87bAvg==
   dependencies:
     "@react-native-async-storage/async-storage" "^1.15.7"
     "@react-native-community/datetimepicker" "^3.5.2"
@@ -1371,6 +1407,8 @@
     color "^4.0.1"
     react "17.0.2"
     react-native "0.65.1"
+    react-native-encrypted-storage "^4.0.2"
+    react-native-fast-image "^8.5.8"
     react-native-gesture-handler "^1.10.3"
     react-native-modal-datetime-picker "^11.0.0"
     react-native-paper "^3.6.0"
@@ -6347,12 +6385,27 @@ react-dom@^17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
+react-fast-compare@^3.1.1:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
+  integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
+
 react-grid-gallery@^0.4.8:
   version "0.4.11"
   resolved "https://registry.yarnpkg.com/react-grid-gallery/-/react-grid-gallery-0.4.11.tgz#409d9d49d35a751cd53787a5645d386b08f7540c"
   integrity sha1-QJ2dSdNadRzVN4elZF04awj3VAw=
   dependencies:
     react-images "^0.5.6"
+
+react-helmet@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-6.1.0.tgz#a750d5165cb13cf213e44747502652e794468726"
+  integrity sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
+  dependencies:
+    object-assign "^4.1.1"
+    prop-types "^15.7.2"
+    react-fast-compare "^3.1.1"
+    react-side-effect "^2.1.0"
 
 react-image-crop@^9.0.2:
   version "9.0.4"
@@ -6404,10 +6457,20 @@ react-native-codegen@^0.0.7:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
+react-native-encrypted-storage@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-encrypted-storage/-/react-native-encrypted-storage-4.0.2.tgz#c7d59b1d3ff2f80d572be3e85aaab3fdee16744a"
+  integrity sha512-vneDkHGDuTvLQjUBztqb2YI8QoH1zxdJonPGTS+g57lfJZff9fAjoLSSb6NgMBebpXFcK3I3sEresGyL+3AArw==
+
 react-native-fast-image@^8.3.7:
   version "8.3.7"
   resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-8.3.7.tgz#c4877de17903101f6d94b6736a4f7e5d7b019224"
   integrity sha512-J++Ad04PTUe4YgjyGv63gfgV8Fz1gZKAgQHpblf8Z87D9dxfc8UfXHTPv9VLGdTJU4IzdTnQqzoFgDtWdsvBsQ==
+
+react-native-fast-image@^8.5.8:
+  version "8.5.11"
+  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-8.5.11.tgz#e3dc969d0e4e8df026646bf18194465aa55cbc2b"
+  integrity sha512-cNW4bIJg3nvKaheG8vGMfqCt5LMWX9MS5+wMudgKIHbGO51spRr4sgnlhVgwHLcZ5aeNOVJ8CPRxDIWKRq/0QA==
 
 react-native-gesture-handler@^1.10.3:
   version "1.10.3"
@@ -6465,6 +6528,11 @@ react-native-screens@^3.6.0:
   integrity sha512-+fmODKdhLITkxmynP2LXEN5DsKzot5TRWnSgkh8zVdf4BL7mDTN035PiOSjlgCxTqXopRPMZJk9TUPCYsRkbeA==
   dependencies:
     warn-once "^0.1.0"
+
+react-native-splash-screen@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-splash-screen/-/react-native-splash-screen-3.2.0.tgz#d47ec8557b1ba988ee3ea98d01463081b60fff45"
+  integrity sha512-Ls9qiNZzW/OLFoI25wfjjAcrf2DZ975hn2vr6U9gyuxi2nooVbzQeFoQS5vQcbCt9QX5NY8ASEEAtlLdIa6KVg==
 
 react-native@0.65.1:
   version "0.65.1"
@@ -6568,6 +6636,11 @@ react-shallow-renderer@^16.13.1:
   dependencies:
     object-assign "^4.1.1"
     react-is "^16.12.0 || ^17.0.0"
+
+react-side-effect@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
+  integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
 
 react-test-renderer@17.0.2:
   version "17.0.2"
@@ -7013,6 +7086,11 @@ set-blocking@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
   integrity sha1-BF+XgtARrppoA93TgrJDkrPYkPc=
+
+set-cookie-parser@^2.4.8:
+  version "2.4.8"
+  resolved "https://registry.yarnpkg.com/set-cookie-parser/-/set-cookie-parser-2.4.8.tgz#d0da0ed388bc8f24e706a391f9c9e252a13c58b2"
+  integrity sha512-edRH8mBKEWNVIVMKejNnuJxleqYE/ZSdcT8/Nem9/mmosx12pctd80s2Oy00KNZzrogMZS5mauK2/ymL1bvlvg==
 
 set-harmonic-interval@^1.0.1:
   version "1.0.1"

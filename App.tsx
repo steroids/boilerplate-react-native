@@ -1,11 +1,16 @@
+import * as React from 'react';
+
 import useApplication from '@steroidsjs/core/hooks/useApplication';
-import useNativeRouter from '@steroidsjs/native/hooks/useNativeRouter';
-import HtmlComponent from '@steroidsjs/native/components/HtmlComponent';
+import NativeRouter from '@steroidsjs/native/ui/nav/NativeRouter';
 import { getDefaultComponentsStyles } from '@steroidsjs/native/style';
 
-import styles from './src/styles';
+import HtmlComponent from '@steroidsjs/native/components/HtmlComponent';
+import HttpComponent from '@steroidsjs/core/components/HttpComponent';
+import ClientStorageComponent from '@steroidsjs/native/components/ClientStorageComponent';
+import ApiComponent from '@steroidsjs/core/components/ApiComponent';
 
-process.env.PLATFORM = 'mobile';
+import Layout from './src/shared/Layout';
+import styles from './src/styles';
 
 export default function App() {
     const {renderApplication} = useApplication({
@@ -15,11 +20,21 @@ export default function App() {
                 className: HtmlComponent,
                 ...styles,
             },
+            http: {
+                className: HttpComponent,
+                apiUrl: process.env.APP_BACKEND_URL,
+            },
+            clientStorage: ClientStorageComponent,
+            api: ApiComponent,
         },
         onInit: ({html}) => {
             html.addStyles([...getDefaultComponentsStyles()]);
         },
     });
-    const Navigations = useNativeRouter(require('./src/routes').default);
-    return renderApplication(Navigations);
+
+    return renderApplication(
+        <Layout>
+            <NativeRouter routes={require('./src/routes/index').default} />
+        </Layout>,
+    );
 }
