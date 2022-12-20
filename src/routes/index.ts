@@ -8,6 +8,7 @@ import {
 } from './routeNames';
 
 import MockScreen from '../shared/MockScreen';
+import UIFormScreen from './UIFormScreen';
 
 export default {
     navigator: {
@@ -25,7 +26,10 @@ export default {
                                 type: 'topTab',
                                 items: {
                                     [FIRST_TOP_TAB_ROUTE]: {
-                                        component: MockScreen,
+                                        options: {
+                                            title: 'Элементы формы',
+                                        },
+                                        component: UIFormScreen,
                                     },
                                     [SECOND_TOP_TAB_ROUTE]: {
                                         component: MockScreen,

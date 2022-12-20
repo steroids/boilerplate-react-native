@@ -28,12 +28,20 @@ export default function App() {
         onInit: ({ui, html}) => {
             ui.addViews({
                 'form.InputFieldView': require('@steroidsjs/native/ui/form/InputField').default,
-                'icon.IconView': require('@steroidsjs/native/ui/icon/IconView').default,
+                'icon.IconView': require('@steroidsjs/native/ui/icon/IconSvgView').default,
                 'form.FieldLayoutView': require('@steroidsjs/native/ui/form/FieldLayout').default,
                 'form.FormView': require('@steroidsjs/native/ui/form/FormView').default,
                 'form.CheckboxListFieldView': require('@steroidsjs/native/ui/form/CheckboxListField').default,
+                'list.ListView': require('./src/ui/list/ListView').default,
+                'list.ListItemView': require('./src/ui/list/ListItemView').default,
+                'form.CheckboxFieldView': require('@steroidsjs/native/ui/form/Switch').default,
+                'form.DateTimeFieldView': require('@steroidsjs/native/ui/form/DateTimeField/views/DateTimeFieldView').default,
+                'form.DateTimeModalView': require('@steroidsjs/native/ui/form/DateTimeField/views/DateTimeModalView').default,
             });
             html.addStyles([...getDefaultComponentsStyles()]);
+            ui.addIcons({
+                ...require('./assets/icons').default,
+            });
         },
     });
 
