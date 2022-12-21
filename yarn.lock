@@ -1593,10 +1593,10 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^1.7.0"
 
-"@steroidsjs/native@^2.1.0-beta.31":
-  version "2.1.0-beta.31"
-  resolved "https://registry.yarnpkg.com/@steroidsjs/native/-/native-2.1.0-beta.31.tgz#708ad6de1b96245fe2e28e7fe82fa325b18f7b1c"
-  integrity sha512-jjtt+FBYAR8IV9jsJa4WnHRScx6OM8O961GW2KUDZU1p1yVvSB9RfL92QcqWMB+dE+UiYbN3dEfye+6SQEzVfA==
+"@steroidsjs/native@^2.1.0-beta.32":
+  version "2.1.0-beta.32"
+  resolved "https://registry.yarnpkg.com/@steroidsjs/native/-/native-2.1.0-beta.32.tgz#47a5aa976adcbb99bf67a49584d12481492afc33"
+  integrity sha512-+Um4J3SnQ8snJCMbZG+ZQrJbFA8ikz2Y4SD3dNrpiwcWvRDnESabd3dz7t+IQ8LR7U8zwFCRxXXuIibzAhtGCg==
   dependencies:
     "@react-native-async-storage/async-storage" "^1.17.10"
     "@react-native-community/datetimepicker" "^6.5.0"
@@ -6943,6 +6943,11 @@ react-native-gradle-plugin@^0.70.3:
   version "0.70.3"
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz#cbcf0619cbfbddaa9128701aa2d7b4145f9c4fc8"
   integrity sha512-oOanj84fJEXUg9FoEAQomA8ISG+DVIrTZ3qF7m69VQUJyOGYyDZmPqKcjvRku4KXlEH6hWO9i4ACLzNBh8gC0A==
+
+react-native-image-picker@^4.10.2:
+  version "4.10.2"
+  resolved "https://registry.yarnpkg.com/react-native-image-picker/-/react-native-image-picker-4.10.2.tgz#75b356c9eea70c2c4f5c1089f8758e2fa32f88a8"
+  integrity sha512-3h9PrA1dQ84rVeipzQE4eWTELvflSHNtJZN6rz7NkZyaxo9YZV8H/TswBpHwiS5YWlyu+zlLzSoWVa1opSu7GA==
 
 react-native-modal-datetime-picker@^14.0.0:
   version "14.0.0"
