@@ -1,6 +1,6 @@
 # React Native Boilerplate
 
-# Размертывание нового приложения на React Native
+# Развертывание нового приложения на React Native
 
 ## 1. Скопировать в отдельную папку всё содержимое, кроме папки .git
 
@@ -8,11 +8,11 @@
 
 ## 3. Заменить applicationId в файле android/app/build.gradle
 
-## 4. Заменить Bundle identifier открыв проект в XCode через файл ios/\*.worckspace
+## 4. Заменить Bundle identifier открыв проект в XCode через файл ios/mobile.worckspace
 
 ## 5. Добавить проект в новый репозиторий
 
-## 6. Удалить раздел "Размертывание нового приложения на React Native" из этого README.md
+## 6. Удалить раздел "Развертывание нового приложения на React Native" из этого README.md
 
 ## Install
 
@@ -36,7 +36,7 @@ yarn android
 
 ### iOS через XCode выбрав эмелятор устройства на котором запускать
 
-## Clear clear cache
+## Clear cache
 
 ### Bundler
 
@@ -107,7 +107,7 @@ yarn aab
 
 ### iOS
 
-1. Open XCode ios/\*.worckspace
+1. Open XCode ios/mobile.worckspace
 2. Make sure to set the device to "Any iOS Device (arm64)"
 3. Product -> Archive
 4. Click button "next"
