@@ -8,6 +8,9 @@ import HtmlComponent from '@steroidsjs/native/components/HtmlComponent';
 import LocaleComponent from '@steroidsjs/core/components/LocaleComponent';
 import ClientStorageComponent from '@steroidsjs/native/components/ClientStorageComponent';
 import NativeRouter from '@steroidsjs/native/ui/nav/NativeRouter';
+import HttpComponent from '@steroidsjs/core/components/HttpComponent';
+
+import config from './src/config';
 
 import styles from './src/styles';
 
@@ -23,6 +26,10 @@ export default function App() {
             html: {
                 className: HtmlComponent,
                 ...styles,
+            },
+            http: {
+                className: HttpComponent,
+                apiUrl: config.appBackendUrl,
             },
         },
         onInit: ({ui, html}) => {
