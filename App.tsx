@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {DefaultTheme} from '@react-navigation/native';
 
 import {useApplication} from '@steroidsjs/core/hooks';
@@ -10,9 +10,8 @@ import ClientStorageComponent from '@steroidsjs/native/components/ClientStorageC
 import NativeRouter from '@steroidsjs/native/ui/nav/NativeRouter';
 import HttpComponent from '@steroidsjs/core/components/HttpComponent';
 
-import config from './src/config';
-
 import styles from './src/styles';
+import Config from 'react-native-config';
 
 export default function App() {
     const {renderApplication} = useApplication({
@@ -29,18 +28,16 @@ export default function App() {
             },
             http: {
                 className: HttpComponent,
-                apiUrl: config.appBackendUrl,
+                apiUrl: Config.appBackendUrl,
             },
         },
         onInit: ({ui, html}) => {
             ui.addViews({
                 'form.InputFieldView': require('@steroidsjs/native/ui/form/InputField').default,
-                'icon.IconView': require('@steroidsjs/native/ui/icon/IconSvgView').default,
+                'content.IconView': require('@steroidsjs/native/ui/icon/IconView').default,
                 'form.FieldLayoutView': require('@steroidsjs/native/ui/form/FieldLayout').default,
                 'form.FormView': require('@steroidsjs/native/ui/form/FormView').default,
                 'form.CheckboxListFieldView': require('@steroidsjs/native/ui/form/CheckboxListField').default,
-                'list.ListView': require('./src/ui/list/ListView').default,
-                'list.ListItemView': require('./src/ui/list/ListItemView').default,
                 'form.CheckboxFieldView': require('@steroidsjs/native/ui/form/Switch').default,
                 'form.DateTimeFieldView': require('@steroidsjs/native/ui/form/DateTimeField/views/DateTimeFieldView').default,
                 'form.DateTimeModalView': require('@steroidsjs/native/ui/form/DateTimeField/views/DateTimeModalView').default,

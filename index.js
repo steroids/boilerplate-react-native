@@ -1,9 +1,13 @@
-import {AppRegistry} from 'react-native';
+/**
+ * @format
+ */
+
+import {AppRegistry, Platform} from 'react-native';
+import Config from 'react-native-config';
 import App from './App';
 import {name as appName} from './app.json';
-import config from './src/config';
 
-process.env.PLATFORM = config.platform;
-process.env.DISABLE_PERSISTENT_ROUTER = config.disablePersistentRouter;
+console.log(Platform.OS, Config);
+process.env = Config;
 
 AppRegistry.registerComponent(appName, () => App);

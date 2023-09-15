@@ -8,7 +8,7 @@
 
 ## 3. Заменить applicationId в файле android/app/build.gradle
 
-## 4. Заменить Bundle identifier открыв проект в XCode через файл ios/mobile.worckspace
+## 4. Заменить Bundle identifier открыв проект в XCode через файл ios/mobile.workspace
 
 ## 5. Добавить проект в новый репозиторий
 
@@ -34,7 +34,7 @@ yarn pod (только для mac os)
 yarn android
 ```
 
-### iOS через XCode выбрав эмелятор устройства на котором запускать
+### iOS через XCode выбрав эмулятор устройства на котором запускать
 
 ## Clear cache
 
@@ -107,7 +107,7 @@ yarn aab
 
 ### iOS
 
-1. Open XCode ios/mobile.worckspace
+1. Open XCode ios/mobile.workspace
 2. Make sure to set the device to "Any iOS Device (arm64)"
 3. Product -> Archive
 4. Click button "next"

@@ -1,15 +1,18 @@
 import React from 'react';
-import { ScrollView, Text, View } from 'react-native';
+import {ScrollView, Text, View} from 'react-native';
 
 import {Form, CheckboxField} from '@steroidsjs/core/ui/form';
-import Icon from '@steroidsjs/core/ui/icon/Icon/Icon';
 import useBemNative from '@steroidsjs/native/hooks/useBemNative';
 import DateTimeField from '@steroidsjs/native/ui/form/DateTimeField';
 
+import {Icon} from '@steroidsjs/core/ui/content';
+import {useComponents} from '@steroidsjs/core/hooks';
 import styles from './UIFormScreenStyles';
 
 export default function UIFormScreen() {
     const bem = useBemNative('UIFormScreen', styles);
+    const components = useComponents();
+
     return (
         <ScrollView
             showsVerticalScrollIndicator={false}
@@ -51,7 +54,7 @@ export default function UIFormScreen() {
                     Icon (default)
                 </Text>
                 <Icon
-                    name='barcode'
+                    name='googleMaps'
                 />
             </View>
             <View style={bem.element('container')}>
@@ -59,7 +62,7 @@ export default function UIFormScreen() {
                     Icon (size)
                 </Text>
                 <Icon
-                    name='barcode'
+                    name='googleMaps'
                     size={40}
                 />
             </View>
@@ -68,8 +71,9 @@ export default function UIFormScreen() {
                     Icon (color)
                 </Text>
                 <Icon
-                    name='barcode'
-                    fill="blue"
+                    name='googleMaps'
+                    tintColor="blue"
+                    style={{width: 20, height: 20}}
                 />
             </View>
         </ScrollView>
