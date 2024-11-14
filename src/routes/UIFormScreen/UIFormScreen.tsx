@@ -1,17 +1,14 @@
 import React from 'react';
 import {ScrollView, Text, View} from 'react-native';
-
 import {Form, CheckboxField} from '@steroidsjs/core/ui/form';
 import useBemNative from '@steroidsjs/native/hooks/useBemNative';
 import DateTimeField from '@steroidsjs/native/ui/form/DateTimeField';
-
 import {Icon} from '@steroidsjs/core/ui/content';
-import {useComponents} from '@steroidsjs/core/hooks';
+
 import styles from './UIFormScreenStyles';
 
 export default function UIFormScreen() {
     const bem = useBemNative('UIFormScreen', styles);
-    const components = useComponents();
 
     return (
         <ScrollView

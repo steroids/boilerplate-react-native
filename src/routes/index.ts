@@ -6,7 +6,6 @@ import {
     FIRST_TOP_TAB_ROUTE,
     SECOND_TOP_TAB_ROUTE,
 } from './routeNames';
-
 import MockScreen from '../shared/MockScreen';
 import UIFormScreen from './UIFormScreen';
 

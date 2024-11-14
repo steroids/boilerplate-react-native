@@ -1,7 +1,6 @@
 import React from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {DefaultTheme} from '@react-navigation/native';
-
 import {useApplication} from '@steroidsjs/core/hooks';
 import {getDefaultComponentsStyles} from '@steroidsjs/native/style';
 import HtmlComponent from '@steroidsjs/native/components/HtmlComponent';
@@ -11,7 +10,6 @@ import NativeRouter from '@steroidsjs/native/ui/nav/NativeRouter';
 import HttpComponent from '@steroidsjs/core/components/HttpComponent';
 
 import styles from './src/styles';
-import Config from 'react-native-config';
 
 export default function App() {
     const {renderApplication} = useApplication({
@@ -28,7 +26,7 @@ export default function App() {
             },
             http: {
                 className: HttpComponent,
-                apiUrl: Config.appBackendUrl,
+                apiUrl: process.env.APP_BACKEND_URL,
             },
         },
         onInit: ({ui, html}) => {
